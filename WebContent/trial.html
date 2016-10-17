@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<ul>
+ <li onclick="this.parentNode.removeChild(this);">
+  <input type="hidden" name="ingredients[]" value="Cheese" />
+  Cheese
+ </li>
+ <li onclick="this.parentNode.removeChild(this);">
+  <input type="hidden" name="ingredients[]" value="Ham" />
+  Ham
+ </li>
+ <li onclick="this.parentNode.removeChild(this);">
+  <input type="hidden" name="ingredients[]" value="Mushrooms" />
+  Mushrooms
+ </li>
+</ul>
+<select onchange="selectIngredient(this);">
+ <option value="Cheese">Cheese</option>
+ <option value="Olives">Olives</option>
+ <option value="Pepperoni">Pepperoni</option>
+
+</select>
+</body>
+</html>
+
